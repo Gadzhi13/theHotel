@@ -1,0 +1,30 @@
+.home-background-container {
+    padding: 45px 115px;
+
+}
+
+.homescreen-button {
+    color: #4db6ac;
+    width: 170px;
+    height: 40px;
+    border: 1px solid #4db6ac;
+    text-align: center;
+}
+
+.container {
+    background: #009688 url(/assets/img/home-cyan.png) no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    color: #c6c6c6;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #a1a1a1;
+}
+
+.header-container {
+    text-align: center;
+}
