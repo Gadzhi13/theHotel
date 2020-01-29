@@ -1,6 +1,11 @@
 .home-background-container {
-    padding: 45px 115px;
+    padding: 35px 10%;
+}
 
+.container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .homescreen-button {
@@ -11,9 +16,10 @@
     text-align: center;
 }
 
-.container {
-    background: #009688 url(/assets/img/home-cyan.png) no-repeat;
-    height: 100vh;
+.container-home {
+    background: #009688 url(/assets/img/home-cyan.png) top center no-repeat;
+    height: calc(100vh - 154px);
+    min-width: 455px;
 }
 
 h1 {
@@ -25,6 +31,44 @@ h2 {
     color: #a1a1a1;
 }
 
+.baku {
+    width: 100%;
+}
+
+.baku h3 {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    color: white;
+    background: url(/assets/img/baku.jpg) no-repeat center center;
+    background-size: 30%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    margin: auto;
+    transition: font-size 1s;
+}
+
+.baku h3:hover {
+    font-size: 200px;
+}
+
 .header-container {
     text-align: center;
+    padding-top: 100px;
+    max-width: 1100px;
+}
+
+@media all and (max-width: 800px) {
+    .header-container .mat-display-3 {
+        font-size: 3rem;
+    }
+
+    .header-container .mat-display-3 {
+        font-size: 2rem;
+    }
+
+    .header-container {
+        max-width: 455px;
+    }
 }
