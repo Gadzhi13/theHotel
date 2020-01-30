@@ -6,6 +6,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .homescreen-button {
@@ -17,7 +18,7 @@
 }
 
 .container-home {
-    background: #009688 url(/assets/img/home-cyan.png) top center no-repeat;
+    background: #1c262b url(/assets/img/home-cyan.png) top center no-repeat;
     height: calc(100vh - 154px);
     min-width: 455px;
 }
@@ -36,27 +37,63 @@ h2 {
 }
 
 .baku h3 {
+    height: 175px;
+    margin-top: 0;
+    margin-bottom: 50px;
     text-align: center;
-    height: 250px;
     width: 100%;
     color: white;
     background: url(/assets/img/baku.jpg) no-repeat center center;
-    background-size: 30%;
+    background-size: 60%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 150px;
-    margin: auto;
     transition: font-size 1s;
 }
 
 .baku h3:hover {
-    font-size: 200px;
+    font-size: 175px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .header-container {
     text-align: center;
     padding-top: 100px;
     max-width: 1100px;
+}
+
+
+.header-container img {
+    height: 100px;
+    transition: height 0.5s;
+}
+
+.header-container img:hover {
+    height: 105px;
+    cursor: pointer;
+}
+
+.container-azerbaijan {
+    padding-top: 50px;
+    height: calc(100vh - 50px);
+    margin: 0;
+}
+
+.container-azerbaijan p {
+    text-align: center;
+    line-height: normal;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-azerbaijan h1 {
+    margin-bottom: 10px;
+}
+
+.cards {
+    padding-top: 50px;
 }
 
 @media all and (max-width: 800px) {
